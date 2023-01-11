@@ -1,5 +1,12 @@
 # 50.043 Introduction to Database System
 
+## Learning Outcomes
+
+By the end of this unit, you should be able to
+
+1. List the problems handled by database management systems.
+2. Describe the techniques used in database system to solve these problems.
+
 ## What is a database? 
 Generally speaking, a database is an organized collection of data. 
 
