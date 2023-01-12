@@ -1,5 +1,6 @@
 # 50.043 Database Systems and Big Data  Course Handout
 
+## This page will be updated regularly. Sync up often.
 
 ## Course Description
 
@@ -30,6 +31,10 @@ Office Hour: Monday 1:30-3:00pm (please send email to arrange)
 * Tran Ly Tu (Fiona) Le (tranlytu_le@mymail.sutd.edu.sg)
 
 * Xinyu Zhao (xinyu_zhao@mymail.sutd.edu.sg)
+
+## Communication
+
+If you have course/assignment/project related questions, please post it on the dedicated MS teams channel.
 
 ## Grading
 
