@@ -215,3 +215,8 @@ $\rho_{(C,CNT)}(_{C} \gamma_{{\tt COUNT}(B)}(R))$ produces
 Sometimes we can rewrite the above expression as 
 $$_{C} \gamma_{{\tt COUNT}(B)\ {\tt as}\ CNT}(R)$$
  without using the renaming operator
+
+
+ ### Alternatives
+
+ Alternative to relational algebra, relational calculus is designed to serve a similiar idea. The difference between them is that relational algebra is more imperative (like C, Java and Python) where relational calculus is more declarative (like CSS, SQL and Lisp). If you are interested to find out more please refer to the text books. Note that relational calculus will not be assessed in this module.
