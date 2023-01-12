@@ -219,4 +219,4 @@ $$_{C} \gamma_{{\tt COUNT}(B)\ {\tt as}\ CNT}(R)$$
 
  ### Alternatives
 
- Alternative to relational algebra, relational calculus is designed to serve a similiar idea. The difference between them is that relational algebra is more imperative (like C, Java and Python) where relational calculus is more declarative (like CSS, SQL and Lisp). If you are interested to find out more please refer to the text books. Note that relational calculus will not be assessed in this module.
+ Alternative to relational algebra, relational calculus is designed to serve a similiar idea. The difference between them is that relational algebra is more procedural (like C, Java and Python) where relational calculus is more declarative (like CSS and SQL). If you are interested to find out more please refer to the text books. Note that relational calculus will not be assessed in this module.
