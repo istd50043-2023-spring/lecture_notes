@@ -81,7 +81,7 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 |8 (12/3) | Query Optimization | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission | 
 | 9 (19/3) | Transactions | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
 | 10 (26/3) | HDFS, MapReduce | HDFS, MapReduce |  |  |
-| 11 (2/4) | Spark | Sprak | | Project Lab 3 Submission |
+| 11 (2/4) | Spark | Spark | | Project Lab 3 Submission |
 | 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission |
 | 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission |
 | 14 (23/4)|  |  |  | 
