@@ -67,6 +67,15 @@ Ask/answer questions during classes, spot mistakes, etc.
 
 Please refer to the project [page](https://github.com/istd50043-2023-spring/project_23).
 
+
+## Submission Policy and Plagiarism
+1. You will do the assignment/project on your own (own teams) and will not copy paste solutions from someone else.
+1. You will not post any solutions related to this course to a private/public repository that is accessible by the public/others.
+1. Students are allowed to have a private repository for their assignment which no one can access. 
+1. For projects, students can only invite their partners as collaborators to a private repository.
+1. Failing to follow the Code of Honour will result in failing the course and/or being submitted to the University Disciplinary Committee. The consequences apply to both the person who shares their work and the person who copies the work.
+
+
 ## Schedule (22 Jan 2023 - 30 Apr 2023)
 
 |Week|Lecture|Cohort|Reference|Remarks|
@@ -86,6 +95,10 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 | 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission |
 | 14 (23/4)|  |  |  | 
  
+
+## Make Up and Alternative Assessment
+Make ups for Final exam will be administered when there is an official Leave of Absence from OSA. There will be only one make up. There will be no make-up if students miss the make up test. 
+
 
 
 
