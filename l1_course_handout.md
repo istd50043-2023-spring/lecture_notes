@@ -81,7 +81,7 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 |Week|Lecture|Cohort|Reference|Remarks|
 |---|---|---|---|---|
 |1 (22/1)  |Intro, ER Model | MySQL, AWS | DBM: Chapter 1-2, <br/> DB: Chapter 7| Tuesday is a CNY holiday, Cohort Class Cancelled, Lecture will be conducted during Cohort Class slots. <br/> Please self-study the MySQL, AWS e-learning materials (from eDimension) |
-|2 (29/1) | Relational Model, Relational Algebra | Data Model, Relational Algebra | DBM: Chapter 3-4, <br/> DSC: Chapter 2 & 6 | Project Team Submission |
+|2 (29/1) | Relational Model, Relational Algebra | Data Model, Relational Algebra | DBM: Chapter 3-4, <br/> DSC: Chapter 2 & 6 | [Project Team Submission](https://docs.google.com/spreadsheets/d/1S0foZTUK4d5_eLKsHtRCLKc6KdDa6acrF1DlwCAR25M/edit?usp=sharing) |
 |3 (5/2) | SQL, NoSQL | SQL | DBM: Chapter 4-5,<br/> DSC: Chapter 2-4 | |
 |4 (12/2) | Functional Dependency, Normal Forms | Functional Dependency, Normal Forms | DBM: Chapter 19,<br/> DSC: Chapter 8 | Assignment 1 Submission | 
 |5 (19/2) | Storage, Index | Strorage, Index | DBM: Chapter 19, <br/> DSC: Chapter 8 |  | 
