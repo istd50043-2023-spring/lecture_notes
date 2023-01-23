@@ -118,9 +118,15 @@ Next we apply the second rule to translation the `publish` relationship to
 
 Note that by default we take all three ids to form a composite primary key. 
 
-The cardinality constraint suggests that 
-1. an article_id and a book_id can determine a publisher_id 
-2. an article_id and a publisher_id can determine a book_id 
+The cardinality constraint suggests that
+* an article_id and a book_id can determine a publisher_id 
+* an article_id and a publisher_id can determine a book_id 
+
+Hence we can reduce the primary key composition of 4. to be 
+
+* Publish(<ins>article_id, book_id</ins>, publisher_id); or
+* Publish(<ins>article_id</ins>, book_id, <ins>publisher_id</ins>)
+
 
 It is a common mistake to think of fixing article_id as a primary key would suffice. Note that the above ER diagram provides no cardinaltiy information between Book and Publisher alone. And the following instance is a counter example to the argument
 
