@@ -67,25 +67,38 @@ Ask/answer questions during classes, spot mistakes, etc.
 
 Please refer to the project [page](https://github.com/istd50043-2023-spring/project_23).
 
+
+## Submission Policy and Plagiarism
+1. You will do the assignment/project on your own (own teams) and will not copy paste solutions from someone else.
+1. You will not post any solutions related to this course to a private/public repository that is accessible by the public/others.
+1. Students are allowed to have a private repository for their assignment which no one can access. 
+1. For projects, students can only invite their partners as collaborators to a private repository.
+1. Failing to follow the Code of Honour will result in failing the course and/or being submitted to the University Disciplinary Committee. The consequences apply to both the person who shares their work and the person who copies the work.
+
+
 ## Schedule (22 Jan 2023 - 30 Apr 2023)
 
 |Week|Lecture|Cohort|Reference|Remarks|
 |---|---|---|---|---|
 |1 (22/1)  |Intro, ER Model | MySQL, AWS | DBM: Chapter 1-2, <br/> DB: Chapter 7| Tuesday is a CNY holiday, Cohort Class Cancelled, Lecture will be conducted during Cohort Class slots. <br/> Please self-study the MySQL, AWS e-learning materials (from eDimension) |
-|2 (29/1) | Relational Model, Relational Algebra | Data Model, Relational Algebra | DBM: Chapter 3-4, <br/> DSC: Chapter 2 & 6 | Project Team Submission |
+|2 (29/1) | Relational Model, Relational Algebra | Data Model, Relational Algebra | DBM: Chapter 3-4, <br/> DSC: Chapter 2 & 6 | [Project Team Submission](https://docs.google.com/spreadsheets/d/1S0foZTUK4d5_eLKsHtRCLKc6KdDa6acrF1DlwCAR25M/edit?usp=sharing) (5/2 23:59) |
 |3 (5/2) | SQL, NoSQL | SQL | DBM: Chapter 4-5,<br/> DSC: Chapter 2-4 | |
-|4 (12/2) | Functional Dependency, Normal Forms | Functional Dependency, Normal Forms | DBM: Chapter 19,<br/> DSC: Chapter 8 | Assignment 1 Submission | 
+|4 (12/2) | Functional Dependency, Normal Forms | Functional Dependency, Normal Forms | DBM: Chapter 19,<br/> DSC: Chapter 8 | Assignment 1 Submission (19/2 23:59) | 
 |5 (19/2) | Storage, Index | Strorage, Index | DBM: Chapter 19, <br/> DSC: Chapter 8 |  | 
-|6 (26/2) | Query Operations | Query Operations | DBM: Chapter 12-14,<br/> DSC: Chapter 12 | Project Lab 1 Submission | 
+|6 (26/2) | Query Operations | Query Operations | DBM: Chapter 12-14,<br/> DSC: Chapter 12 | Project Lab 1 Submission (5/3 23:59) | 
 |7 (5/3)  | Recess Week | Recess Week | | Self-study flintrock and spark cluster setup (edimension video tutorial) |
-|8 (12/3) | Query Optimization | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission | 
+|8 (12/3) | Query Optimization | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission (19/3 23:59) | 
 | 9 (19/3) | Transactions | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
 | 10 (26/3) | HDFS, MapReduce | HDFS, MapReduce |  |  |
-| 11 (2/4) | Spark | Sprak | | Project Lab 3 Submission |
-| 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission |
-| 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission |
+| 11 (2/4) | Spark | Spark | | Project Lab 3 Submission (9/4 23:59) |
+| 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission (16/4 23:59) |
+| 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission (23/4 23:59) |
 | 14 (23/4)|  |  |  | 
  
+
+## Make Up and Alternative Assessment
+Make ups for Final exam will be administered when there is an official Leave of Absence from OSA. There will be only one make up. There will be no make-up if students miss the make up test. 
+
 
 
 
