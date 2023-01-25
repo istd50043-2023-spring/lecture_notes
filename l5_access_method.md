@@ -198,7 +198,7 @@ One issue with Cuckoo Hashing is that eventually, we need to rehash everything.
 
 The idea behind Bucket Hashing (a.k.a extensible hashing) is to 
 * store hashed values in buckets (relative small fixed size arrays, so that the sequential search is not expensive). All buckets have the same size.
-* use a $n$ least significant bits (LSB) of the hashed value to decide in  which bucket it should be placed.
+* use the $n$ least significant bits (LSB) of the hashed value to decide in  which bucket it should be placed.
 * increase $n$ and add new bucket gradually as some bucket becomes full.
 
 The Bucket Hashing algorithm starts with a global slot array, a bucket.
