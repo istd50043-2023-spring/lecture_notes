@@ -80,19 +80,19 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 
 |Week|Lecture|Cohort|Reference|Remarks|
 |---|---|---|---|---|
-|1 (22/1)  |Intro, ER Model | MySQL, AWS | DBM: Chapter 1-2, <br/> DB: Chapter 7| Tuesday is a CNY holiday, Cohort Class Cancelled, Lecture will be conducted during Cohort Class slots. <br/> Please self-study the MySQL, AWS e-learning materials (from eDimension) |
-|2 (29/1) | Relational Model, Relational Algebra | Data Model, Relational Algebra | DBM: Chapter 3-4, <br/> DSC: Chapter 2 & 6 | [Project Team Submission](https://docs.google.com/spreadsheets/d/1S0foZTUK4d5_eLKsHtRCLKc6KdDa6acrF1DlwCAR25M/edit?usp=sharing) |
+|1 (22/1)  |Intro, ER Model | MySQL, AWS | DBM: Chapter 1-2, <br/> DS: Chapter 7| Tuesday is a CNY holiday, Cohort Class Cancelled, Lecture will be conducted during Cohort Class slots. <br/> Please self-study the MySQL, AWS e-learning materials (from eDimension) |
+|2 (29/1) | Relational Model, Relational Algebra | Data Model, Relational Algebra | DBM: Chapter 3-4, <br/> DSC: Chapter 2 & 6 | [Project Team Submission](https://docs.google.com/spreadsheets/d/1S0foZTUK4d5_eLKsHtRCLKc6KdDa6acrF1DlwCAR25M/edit?usp=sharing) (5/2 23:59) |
 |3 (5/2) | SQL, NoSQL | SQL | DBM: Chapter 4-5,<br/> DSC: Chapter 2-4 | |
-|4 (12/2) | Functional Dependency, Normal Forms | Functional Dependency, Normal Forms | DBM: Chapter 19,<br/> DSC: Chapter 8 | Assignment 1 Submission | 
+|4 (12/2) | Functional Dependency, Normal Forms | Functional Dependency, Normal Forms | DBM: Chapter 19,<br/> DSC: Chapter 8 | Assignment 1 Submission (19/2 23:59) | 
 |5 (19/2) | Storage, Index | Strorage, Index | DBM: Chapter 19, <br/> DSC: Chapter 8 |  | 
-|6 (26/2) | Query Operations | Query Operations | DBM: Chapter 12-14,<br/> DSC: Chapter 12 | Project Lab 1 Submission | 
+|6 (26/2) | Query Operations | Query Operations | DBM: Chapter 12-14,<br/> DSC: Chapter 12 | Project Lab 1 Submission (5/3 23:59) | 
 |7 (5/3)  | Recess Week | Recess Week | | Self-study flintrock and spark cluster setup (edimension video tutorial) |
-|8 (12/3) | Query Optimization | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission | 
+|8 (12/3) | Query Optimization | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission (19/3 23:59) | 
 | 9 (19/3) | Transactions | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
 | 10 (26/3) | HDFS, MapReduce | HDFS, MapReduce |  |  |
-| 11 (2/4) | Spark | Spark | | Project Lab 3 Submission |
-| 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission |
-| 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission |
+| 11 (2/4) | Spark | Spark | | Project Lab 3 Submission (9/4 23:59) |
+| 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission (16/4 23:59) |
+| 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission (23/4 23:59) |
 | 14 (23/4)|  |  |  | 
  
 
