@@ -23,7 +23,7 @@ The main resources are lecture slides, tutorial sessions, and online documentati
 Office Hour:
 
 * Kenny Lu (kenny_lu@sutd.edu.sg) 
-Office Hour: Monday 1:30-3:00pm (please send email to arrange)
+Office Hour: Monday 3:00-4:30pm (please send email to arrange)
 
 
 ## TAs
