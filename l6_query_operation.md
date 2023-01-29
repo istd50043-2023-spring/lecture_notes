@@ -301,10 +301,23 @@ Assuming the buffer pool is of size $m$, we divde the buffer pool into $m-2$ fra
 The cost of this approach is $B(R) + \lceil B(R) / (m - 2) \rceil \cdot B(S)$.
 The cost will be $B(S) + \lceil B(S) / (m - 2) \rceil \cdot B(R)$ if the outer/inner relations are swapped.
 
+### Index Nested Loop Join
+
+If the join predicate $c$ is $R.a = S.b$ and an index attribute exists for $S.b$, we can optimize the nested loop join by using the indexed relation as the inner relation. 
+
+1. for each tuple $t$ in $R$
+    1. find the tuple $u$ in $S$ with $u.b = t.c$ using index 
+        1. output $t$ and $u$.
+
+
+The cost of this approach is $B(R) + |R| \cdot K$ where $K$ is a constant dependent on the structure of the index or the height of the B+ Tree index. E.g. if the height of the B+ Tree is 3, then $K = 4$ assuming each node occupying a page. 
+
+An exterem case where $R$ is sorted by $a$ and $S.b$ is a clustered index. The total cost is $B(R) + B(S)$. 
+
 
 ### Sort Merge Join
 
-The third alternative is to sort merge join. 
+The fourth alternative is to sort merge join. 
 
 1. Sort $R$ by the attribute used in $c$
 2. Sort $S$ by the attribute used in $c$
