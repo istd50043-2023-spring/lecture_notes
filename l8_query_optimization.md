@@ -198,7 +198,7 @@ From the previous lesson, we learned how to estimate the I/O cost for different 
 1. the sizes of the relations
 2. the selectivity of the predicate.
 
-In DBMS, the sizes of the relations are recorded periodically in the catalog. The catalog ub-system keeps track of the following the statistics which can be used to approximate the selectivity.
+In DBMS, the sizes of the relations are recorded periodically in the catalog. The catalog sub-system keeps track of the following the statistics which can be used to approximate the selectivity.
 1. $N(R)$ the number of tuples in $R$
 2. $V(a,R)$ the number of unique values of attribute $a$ in $R$.
 3. $min(a,R)$ the minumum value of attribute $a$ in $R$
