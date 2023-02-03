@@ -126,7 +126,7 @@ $R \bowtie_{R.A =S.D} S$ produces
 
 ### Natural Join
 
-The nature join operator $(R \bowtie S)$, returns a relation that containing tuples from $R\times S$ that satisfy $R.A = S.A, R.B=S.B,...$, where $A$, $B$, ... are the common attributes between $R$ and $S$.
+The natural join operator $(R \bowtie S)$, returns a relation that containing tuples from $R\times S$ that satisfy $R.A = S.A, R.B=S.B,...$, where $A$, $B$, ... are the common attributes between $R$ and $S$.
 
 Note that the common column are merged after natural join.
 
@@ -191,7 +191,7 @@ We omit the attribute name $A_1,...,A_n$ when we only want to rename the relatio
 
 Aggregation operation $_{A_1,...,A_n} \gamma_{F_1(B_1),F_2(B_2),...} (R)$ produces a new relation $R'$ which contains
 * $A_1,...,A_n$ as the attribute names to group by
-* $F_1(B_1)$,...,$F_m(B_m)$ as the aggregated values 
+* $F_1(B_1),...,F_m(B_m)$ as the aggregated values 
 where
 * $F_1, ..., F_m$ are aggregation functions such as `SUM()`, `AVG()`, `MIN()`, `MAX()`, `COUNT()`.
 * $A_1, ..., A_n$, $B_1, ..., B_m$ are attributes from $R$.
@@ -205,7 +205,7 @@ For example, given $R(A,B,C)$
 |a3 |103|0 |
 
 
-$\rho_{(C,CNT)}(_{C} \gamma_{{\tt COUNT}(B)}(R))$ produces
+$\rho_{(C,CNT)}({}_{C} \gamma_{{\tt COUNT}(B)}(R))$ produces
 
 |C|CNT|
 |---|---|
