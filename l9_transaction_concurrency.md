@@ -356,7 +356,7 @@ Assume the initial state is `A=0`, executing the above schedule yields the follo
 5.  <T2 commit>
 ```
 
-After timestep 11, the database crash.
+After timestep 11, the database crashes.
 
 During the recovery phase, we start with undo phase, we find that T1 need to be undone and aborted.
 However, T2's effect of `A=A+1` is based on the assumption that `A=10` in T1 was successful. As a result, T2 has be to aborted and undone too. This is known as cascading abort.
