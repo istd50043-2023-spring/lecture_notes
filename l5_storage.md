@@ -29,12 +29,12 @@ We do not consider in memory database because it is not common, due to its cost.
 We do not consider SSD and non-volatile memory because they similar to hard disk storage except that there is no rotational delay and seek time delay is marginal, but the general cost computation model is still applicable. 
 
 
-### Mechanical Rotational Harddisk 
+### Mechanical Rotational Hard disk 
 
 ![](./images/disk_internal.png)
 (image from Database Management Systems, R. RamaKrishnan and J. Gehrke)
 
-The figure above illustrate the internal of a mechanincal harddisk, which is a cylindical structure. It consists of multiple platter of disks stacked up vertically. Each platter consists of multiple tracks. Each track is divided into multiple sectors. Disk heads read from/write to disk track. Only one head is allowed to operate at any point in time. Data are organized into blocks (which is determined by the governing system, DBMS storage or OS file system). A block might span across multiple consecutive sectors. Different system use different block size.
+The figure above illustrate the internal of a mechanical hard disk, which is a cylindrical structure. It consists of multiple platter of disks stacked up vertically. Each platter consists of multiple tracks. Each track is divided into multiple sectors. Disk heads read from/write to disk track. Only one head is allowed to operate at any point in time. Data are organized into blocks (which is determined by the governing system, DBMS storage or OS file system). A block might span across multiple consecutive sectors. Different system use different block size.
 
 We break down the time needed for each type of disk head movement that related to disk I/O.
 
@@ -43,7 +43,7 @@ We break down the time needed for each type of disk head movement that related t
 * Transfer time $t_{tf}$ : to read/write a block of data​, 0.1ms​
 
 
-#### Random vs squential access cost
+#### Random vs sequential access cost
 
 Given $D$ number of blocks of data, the cost of accessing the data randomly is 
 
@@ -85,19 +85,21 @@ Each file managed by the Disk Manager is organized as a set of *page*s.
 
 Page is the basic unit of data storage from the memory (RAM) perspective, determined by the DBMS configuration. 
 
-Block is the basic unit of data storage from the physical disk (hard diks) perspective, determined by the OS configuration. 
+Block is the basic unit of data storage from the physical disk (hard disk) perspective, determined by the OS configuration. 
 
 These two might or might not be in sync in terms of size. 
 
 From now onwards, for the ease of reasoning, we assume a page is of the same size of a block unless we specifically define otherwise.
 
 
-### Inside a Page
+### What is Inside a Page
 
 Besides a set of tuples/records, a page contains 
 
-* the meta information (also known as the header, which be discussed in a few paragraphs away in this unit)
-* the index and the log, which be discussed in the upcoming unit. 
+* the meta information (also known as the header)
+* the index and the log
+
+we will defer the discussion until the next unit.
 
 ## Cache system - Buffer Pool
 
@@ -110,7 +112,7 @@ The Buffer Pool has a fixed set of slots (known as frames). Each page is loaded 
 The Buffer Pool maintains the following information,
 
 1. Page to frame mapping
-2. Whether a page is *pinned*. A page is pinned means it is being accessed currently. When a data operation (query/insert/update/delete) is performed it will pin all the required paged. When the operation is completed, the pages are unpined. Note that in a full system, we see concurrent access to pages, thus, in most of the situation, the Buffer Pool maintains a pin counter per slot.
+2. Whether a page is *pinned*. A page is pinned means it is being accessed currently. When a data operation (query/insert/update/delete) is performed it will pin all the required pages. When the operation is completed, the pages are unpinned. Note that in a full scale system, we might see concurrent accesses to pages, thus, in most of the situation, the Buffer Pool maintains a pin counter per slot.
 3. Whether a page is dirty.
 4. Extra information to support the eviction policy.
 
@@ -197,8 +199,8 @@ pg = page, pc = pincount, ref = reference bit
 
 |time|page req'ed| frame 0 | frame 1 | frame 2 | hand |  
 |---|---|---|---|---|---|
-| 1 | 1 | **pg:1, pc:0, ref: 1** | | | 0 |
-| 2 | 2 | pg:1, pc:0, ref: 1 | **pg:2, pc:0, ref: 1** | | 0 
+| 1 | 1 | **pg:1, pc:0, ref: 1** | | | 1 |
+| 2 | 2 | pg:1, pc:0, ref: 1 | **pg:2, pc:0, ref: 1** | | 2 
 | 3 | 3 | pg:1, pc:0, ref: 1 | pg:2, pc:0, ref: 1 | **pg:3, pc:0, ref: 1** | 0 |
 | 4 | 4 | pg:1, pc:0, **ref: 0** | pg:2, pc:0, ref:1 | pg:3, pc:0, ref:1 | **1** | 
 | 5 | 4 | pg:1, pc:0, ref: 0 | pg:2, pc:0, **ref:0** | pg:3, pc:0, ref:1 | **2** |
