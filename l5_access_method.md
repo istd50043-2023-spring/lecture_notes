@@ -189,7 +189,7 @@ The all values are in the hash table(s).
 ![](./images/cuckoo35.png)
 
 
-The advantage of this approach is that the lookup cost is alway $O(1)$.
+The advantage of this approach is that the lookup cost is always $O(1)$.
 The downside is that we might run into infinite vacate-insert loop. We need to some mechanism to detect the loop, and rehash everything with a new set of hash functions, or add more tables (and new hash functions).
 
 #### Bucket Hashing
@@ -386,7 +386,7 @@ To delete a value with key $k$ from a B+ Tree, we follow the algorithm as follow
     1. remove the entry with $k$
         1. if $L$ is at least half-full (i.e. $|L -\{k\}| \geq d$), we are done!
         2. otherwise
-            1. if $L$ has a sibling $L'$, and $k'$ is the key from the parent that divides $L$ and $L'$, such that $|L \cup \{k'\} \cup L'-\{k\}| \geq 2*d$
+            1. if $L$ has a sibling $L'$, and $k'$ is the key from the parent that divides $L$ and $L'$, such that $|L \cup \{k'\} \cup L'-\{k\}| \geq 2*d$ (Notes:if both left and right siblings having sufficient entries, we favor the left sibling)
                 1. find the new middle key in $L \cup \{k'\} \cup L'-\{k\}$, say $k''$, replace $k'$ by $k''$ in $parent(L)$
                 2. if $|L \cup \{k'\} \cup L'-\{k\}|-1 \geq 2*d$
                     1. re-distribute $L \cup \{k'\} \cup L' - \{k,k''\}$ among the two leaf nodes.
