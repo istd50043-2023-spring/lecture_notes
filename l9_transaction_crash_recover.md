@@ -265,7 +265,7 @@ The main idea is to flush all uncommitted tranactions' dirty pages during the ch
 2. insert a `<start_checkpoint T1,...,Tn>` entry to the log.
 3. when all the dirty pages belonging to `T1,...,Tn` are flushed and committed, insert `<end_checkpoint T1,...,Tn>` entry to the log.
 
-During the undo recovery phase, we start from the last completed checkpoint's  `start_checkpoint` entry and scan for uncommitted transactions in the log and undo the page write if there is any. This is because during the checkpoint, there might be new transaction initiated.
+During the undo recovery phase, we start from the last completed checkpoint's  `start_checkpoint` entry and scan for uncommitted transactions in the log and undo the page write if there is any. This is because during the checkpoint, there might be new transaction initiated. Note that that undo operations are applied backwards starting from the tail.
 
 For instance, consider the tail fragment of some log (simplified).
 
@@ -327,8 +327,8 @@ The most complicated checkpoint so far. The main idea is to flush all dirty page
 3. flush any dirty pages belonging to some update entries made before the start of the check point.
 4. insert a `<end_checkpoint T1,...,Tn>`.
 
-During the redo recovery phase, we start from the last completed checkpoint's `start_checkpoint` entry and search for transactions being committed  after this point, and redo these transactions (the same as the redo-logging case).
 During the undo recovery phase, we start from the last completed checkpoint's `start_checkpoint` entry and search for uncommitted transactions and undo the update, some of these transaction could have been started before the `start_checkpoint`.
+During the redo recovery phase, we start from the last completed checkpoint's `start_checkpoint` entry and search for transactions being committed  after this point, and redo these transactions (the same as the redo-logging case).
 
 For instance, consider the tail fragment of some log (simplified).
 
@@ -347,8 +347,8 @@ For instance, consider the tail fragment of some log (simplified).
 12. <end_checkpoint t1,t2> # p1, p3 and other dirty pages belong to t0 have been flushed
 13. <t2 commit>
 ```
+For undo-phase, we start from line 7 `<start_checkpoint t1,t2>` and search for uncommitted transactions, i.e. `t3`, we undo the update at line 11.
 
 For redo-phase, we start from line 7 `<start_checkpoint t1,t2>` and search for committed transactions, i.e. `t1` and `t2`, we need to re-do the updates at lines 4, 6 and 9.
-For undo-phase, we start from line 7 `<start_checkpoint t1,t2>` and search for uncommitted transactions, i.e. `t3`, we undo the update at line 11.
 
 
