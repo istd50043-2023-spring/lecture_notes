@@ -24,11 +24,7 @@ There are several ways to implement this operation.
 
 Knowing that the data in $R$ are stored in a Heap file as a set of Heap pages, we could scan $R$ by reading the data from $R$ page by page. For each tuple in the page, we remove it when it does not satisfy $C$ and retain it otherwise. 
 
-The cost (in terms of number of Disk I/Os) of using the sequential scanning approach is
-$$ 
-B(R)
-$$
-
+The cost (in terms of number of Disk I/Os) of using the sequential scanning approach is $B(R)$,
 where $B(R)$ denotes the number of pages storing $R$.
 
 ### Scanning with B+ Tree index

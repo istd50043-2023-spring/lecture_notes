@@ -23,14 +23,15 @@ Recall the article/book/publisher example
 - publish(<ins>article_id, book_id, publisher_id</ins>)
 
 We would like to find out article names that are published in year `2010`
+
 $$
-\Pi_{article.name} (\sigma_{book.date = 2010}(article \bowtie_{article.id=publish.article\_id} (publish \bowtie_{publish.book\_id = book.id} book)) ~~~~ {\tt (E1)} 
+\Pi_{article.name} (\sigma_{book.date = 2010}(article \bowtie_{article.id=publish.article\_id} (publish \bowtie_{publish.book\_id = book.id} book))) ~~~~ {\tt (E1)} 
 $$
 
 Note that the above relation algebra expression is equivalent to the following thanks to the associativity of the $\bowtie$ operator.
 
 $$
-\Pi_{article.name} (\sigma_{book.date = 2010}((article \bowtie_{article.id=publish.article\_id} publish) \bowtie_{publish.book\_id = book.id} book) ~~~~ {\tt (E2)}
+\Pi_{article.name} (\sigma_{book.date = 2010}((article \bowtie_{article.id=publish.article\_id} publish) \bowtie_{publish.book\_id = book.id} book)) ~~~~ {\tt (E2)}
 $$
 
 Besides these two alternatives, we also find the following expression producing the same result by "pushing" the selection operation down to the book relation, since it is only constrainted by the book's attribute.
@@ -250,6 +251,7 @@ The idea behind is to apply the following heuristics
 1. Only consider the left-skew trees.
     1. This is because in many different physical plans, we need to scan the right sub-tree multiple times in join. It is better to keep the right sub-tree as simple as possible.
     2. If we apply this heuristic, we cut down the search based to 
+
     $$
     \left (\begin{array}{c}
             n \\
@@ -267,12 +269,14 @@ The idea behind is to apply the following heuristics
             \end{array}
     \right ) =       n!
          $$
+
 2. Considering the left-skew trees with $n$ relations still computing $n!$ possible plans. To further cut down the search, the algorithm assumes the best overall plan consists of best sub-plans. It proceeds by finding the best plans for leaf nodes, then "walk-up" the trees by finding the best plans to combine intermediate steps.  For example, 
     * Pass 1. find the best plans for each relations (leaf nodes)
     * Pass 2. find the best plans to join any 2 relations
     * Pass 3. find the best plans to join any 3 relations
     * ...
 For each pass $i$ where $i>1$, the best plans are computed based on the result from pass $i-1$. Overall this cut down the final search space of an $n$-way join to
+
 $$
 \left (\begin{array}{c}
  n \\
@@ -280,7 +284,9 @@ $$
  \end{array}
 \right ) 
 $$
+
 And the overall time-complexity of 
+
 $$
 \left (\begin{array}{c}
             n \\
