@@ -250,9 +250,9 @@ The selinger algorithm is one of the classic algorthm for searching for optimal 
 The idea behind is to apply the following heuristics
 1. Only consider the left-skew trees.
     1. This is because in many different physical plans, we need to scan the right sub-tree multiple times in join. It is better to keep the right sub-tree as simple as possible.
-    2. If we apply this heuristic, we cut down the search based to 
+    2. If we apply this heuristic, we cut down the search base to 
 
-    $$
+$$
     \left (\begin{array}{c}
             n \\
             n - 1
@@ -268,7 +268,7 @@ The idea behind is to apply the following heuristics
             1
             \end{array}
     \right ) =       n!
-         $$
+$$
 
 2. Considering the left-skew trees with $n$ relations still computing $n!$ possible plans. To further cut down the search, the algorithm assumes the best overall plan consists of best sub-plans. It proceeds by finding the best plans for leaf nodes, then "walk-up" the trees by finding the best plans to combine intermediate steps.  For example, 
     * Pass 1. find the best plans for each relations (leaf nodes)
