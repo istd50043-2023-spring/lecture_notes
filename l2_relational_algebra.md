@@ -189,7 +189,7 @@ We omit the attribute name $A_1,...,A_n$ when we only want to rename the relatio
 
 ### Aggregation
 
-Aggregation operation $_{A_1,...,A_n} \gamma_{F_1(B_1),F_2(B_2),...} (R)$ produces a new relation $R'$ which contains
+Aggregation operation <sub>$A$<sub>1</sub>,...,$A$<sub>n</sub></sub> $\gamma_{F_1(B_1),F_2(B_2),...} (R))$ produces a new relation $R'$ which contains
 * $A_1,...,A_n$ as the attribute names to group by
 * $F_1(B_1),...,F_m(B_m)$ as the aggregated values 
 where
@@ -205,7 +205,7 @@ For example, given $R(A,B,C)$
 |a3 |103|0 |
 
 
-$\rho_{(C,CNT)}({}_{C} \gamma_{{\tt COUNT}(B)}(R))$ produces
+$\rho_{(C,CNT)}($<sub>$C$</sub>$\gamma_{{\tt COUNT}(B)}(R))$ produces
 
 |C|CNT|
 |---|---|
