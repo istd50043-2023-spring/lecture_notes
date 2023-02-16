@@ -87,8 +87,8 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 |5 (19/2) | [Storage](./l5_storage.md), [Index](./l5_access_method.md) | Strorage, Index | DBM: Chapter 19, <br/> DSC: Chapter 8 |  | 
 |6 (26/2) | [Query Operations](./l6_query_operation.md) | Query Operations | DBM: Chapter 12-14,<br/> DSC: Chapter 12 | Project Lab 1 Submission (5/3 23:59) | 
 |7 (5/3)  | Recess Week | Recess Week | | Self-study flintrock and spark cluster setup (edimension video tutorial) |
-|8 (12/3) | Query Optimization | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission (19/3 23:59) | 
-| 9 (19/3) | Transactions | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
+|8 (12/3) | [Query Optimization](./l8_query_optimization.md) | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission (19/3 23:59) | 
+| 9 (19/3) | Transaction [Recovery](./l9_transaction_crash_recover.md) and [Concurrency](./l9_transaction_concurrency.md)  | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
 | 10 (26/3) | HDFS, MapReduce | HDFS, MapReduce |  |  |
 | 11 (2/4) | Spark | Spark | | Project Lab 3 Submission (9/4 23:59) |
 | 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission (16/4 23:59) |
