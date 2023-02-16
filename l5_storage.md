@@ -191,7 +191,8 @@ Compared to LRU, the Clock Replacement Policy uses less memory, reference bit vs
 #### Example 
 
 Let's re-run the same example 
-$$ 1,2,3,4,1,2 $$ 
+
+$1,2,3,4,1,2$ 
 
 with Clock Replacement Policy
 
@@ -199,8 +200,8 @@ pg = page, pc = pincount, ref = reference bit
 
 |time|page req'ed| frame 0 | frame 1 | frame 2 | hand |  
 |---|---|---|---|---|---|
-| 1 | 1 | **pg:1, pc:0, ref: 1** | | | 1 |
-| 2 | 2 | pg:1, pc:0, ref: 1 | **pg:2, pc:0, ref: 1** | | 2 
+| 1 | 1 | **pg:1, pc:0, ref: 1** | | | 0 |
+| 2 | 2 | pg:1, pc:0, ref: 1 | **pg:2, pc:0, ref: 1** | | 0 
 | 3 | 3 | pg:1, pc:0, ref: 1 | pg:2, pc:0, ref: 1 | **pg:3, pc:0, ref: 1** | 0 |
 | 4 | 4 | pg:1, pc:0, **ref: 0** | pg:2, pc:0, ref:1 | pg:3, pc:0, ref:1 | **1** | 
 | 5 | 4 | pg:1, pc:0, ref: 0 | pg:2, pc:0, **ref:0** | pg:3, pc:0, ref:1 | **2** |
