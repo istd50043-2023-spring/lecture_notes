@@ -91,8 +91,8 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 | 9 (19/3) | Transaction [Recovery](./l9_transaction_crash_recover.md) and [Concurrency](./l9_transaction_concurrency.md)  | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
 | 10 (26/3) | HDFS, MapReduce | HDFS, MapReduce |  |  |
 | 11 (2/4) | Spark | Spark | | Project Lab 3 Submission (9/4 23:59) |
-| 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission (16/4 23:59) |
-| 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission (23/4 23:59) |
+| 12 (9/4) | Guest Lecture | Consultation | | Assignment 2 Submission (16/4 23:59) |
+| 13 (16/4)| Yarn, Revision | Consultation | | Project Lab 4 Submission (23/4 23:59) |
 | 14 (23/4)|  |  |  | 
  
 
