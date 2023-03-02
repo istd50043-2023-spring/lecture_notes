@@ -60,7 +60,7 @@ Single MR job         | DAG job
 :-------------------------:|:-------------------------:
 ![](./images/MRRigid.png){width=15%}  |![](./images/dag.png){width=60%}
 
-* There exist projects try to abstract Hadoop MR
+* There exist projects that try to abstract Hadoop MR
     * Cascading
 	```url
 	https://www.cascading.org/projects/hadoop/
@@ -207,7 +207,7 @@ What do you mean by lazy and strict?
 
 Lazy evaluation is one of the evaluation strategies, besides
 call-by-value, call-by-reference. 
-Let's pretend Python 3.10 support lazy evaluation.
+Let's pretend Python 3.10 supports lazy evaluation.
 
 ```python
 def filter(p, l):
@@ -379,7 +379,7 @@ return some value that is not an RDD. It forces computation to happen.
 # RDD shuffle operations
 
 Some transformation/operations will trigger a shuffle event, in which
-Spark redistribute the data across partition.
+Spark redistributes the data across partition.
 
 * reduceByKey
 * join
