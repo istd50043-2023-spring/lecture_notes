@@ -5,7 +5,7 @@
 By the end of this unit, you should be able to
 
 1. name the stages in a query life cycle
-2. identify the process invovled in different stages of a query life cycle
+2. identify the process involved in different stages of a query life cycle
 3. identify the different execution model
 4. explain the process of query optimization
 5. estimate the cost of complex query operations
