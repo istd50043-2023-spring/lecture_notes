@@ -206,7 +206,8 @@ It maintains a set of integer values of $n$ LSB. $G$ denotes the global value of
 
 
 ##### Bucket Hashing Insertion
-To insert a value $X$ (for simplicity, we treat $X$ same as $hash(X)$)
+For simplicity, we treat $X$ the same as $hash(X)$.
+To insert a value $X$,
 
 1. lookup the bucket for $X$ based on the last $G$ bits of $X$.
     1. if the bucket $i$ is not full, insert $X$ there.
@@ -386,7 +387,7 @@ To delete a value with key $k$ from a B+ Tree, we follow the algorithm as follow
     1. remove the entry with $k$
         1. if $L$ is at least half-full (i.e. $|L -\{k\}| \geq d$), we are done!
         2. otherwise
-            1. if $L$ has a sibling $L'$, and $k'$ is the key from the parent that divides $L$ and $L'$, such that $|L \cup \{k'\} \cup L'-\{k\}| \geq 2*d$ (Notes:if both left and right siblings having sufficient entries, we favor the left sibling)
+            1. if $L$ has a sibling $L'$, and $k'$ is the key from the parent that divides $L$ and $L'$, such that $|L \cup \{k'\} \cup L'-\{k\}| \geq 2*d$
                 1. find the new middle key in $L \cup \{k'\} \cup L'-\{k\}$, say $k''$, replace $k'$ by $k''$ in $parent(L)$
                 2. if $|L \cup \{k'\} \cup L'-\{k\}|-1 \geq 2*d$
                     1. re-distribute $L \cup \{k'\} \cup L' - \{k,k''\}$ among the two leaf nodes.

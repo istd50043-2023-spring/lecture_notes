@@ -71,7 +71,7 @@ Formally speaking, a functional dependency is a *constraint* between two sets of
 ### Definition of FD
 
 Let $X_1,...,X_m$, $Y_1, ..., Y_n$ be attributes. we write 
-$$ X_1,...,X_m \rightarrow Y_1, ..., Y_n$$ 
+$$X_1,...,X_m \rightarrow Y_1, ..., Y_n$$ 
 to denote a functional dependency between $X_1, ..., X_m$ and $Y_1, ..., Y_n$. 
 
 We refer $X_1,...,X_m$ as the *antecedent* and $Y_1, ..., Y_n$ as the *consequent*.
@@ -192,7 +192,7 @@ It follows that for any set of FDs, we can convert it into an equivalent set wit
 Let $F$ denote a set of FDs, we say $F_c$ is the canonical cover iff 
 1. All FDs in $F_c$ are in standard form; and
 2. $F_c^+ \subseteq F^+ \wedge F^+ \subseteq F_c^+$; and
-3. $\neg \exists G \subset F_c$ such that  $ G^+ \subseteq F^+ \wedge F^+ \subseteq G^+$
+3. $\neg \exists G \subset F_c$ such that  $G^+ \subseteq F^+ \wedge F^+ \subseteq G^+$
 
 ### Algorithm to compute $F_c$
 
@@ -203,64 +203,64 @@ Let $F$ denote a set of FDs, we say $F_c$ is the canonical cover iff
 For example, consider 
 
 $$
-F = \left \{ \begin{array}{ccc} 
+F = \left [ \begin{array}{ccc} 
     AB & \rightarrow & C & (1) \\
     A & \rightarrow & BC & (2) \\
     B & \rightarrow & C & (3) \\
     A & \rightarrow & B & (4)
     \end{array}
-    \right \}
+    \right ]
 $$
 
 First applying split rule to (2)
 
 
 $$
-F = \left \{ \begin{array}{ccc} 
+F = \left [ \begin{array}{ccc} 
     AB & \rightarrow & C & (1) \\
     A & \rightarrow & B & (2) \\
     A & \rightarrow & C & (2') \\
     B & \rightarrow & C & (3) \\
     A & \rightarrow & B & (4)
     \end{array}
-    \right \}
+    \right ]
 $$
 
 Then we apply Augmentation and Transitivity rules to (1) and (2) to minimize LHS of rule (1)
 
 
 $$
-F = \left \{ \begin{array}{ccc} 
+F = \left [ \begin{array}{ccc} 
     A & \rightarrow & C & (1) \\
     A & \rightarrow & B & (2) \\
     A & \rightarrow & C & (2') \\
     B & \rightarrow & C & (3) \\
     A & \rightarrow & B & (4)
     \end{array}
-    \right \}
+    \right ]
 $$
 
 Now we find that (2') is a duplicate of (1) and (4) is a duplicate of (2).
 
 
 $$
-F = \left \{ \begin{array}{ccc} 
+F = \left [ \begin{array}{ccc} 
     A & \rightarrow & C & (1) \\
     A & \rightarrow & B & (2) \\
     B & \rightarrow & C & (3) 
     \end{array}
-    \right \}
+    \right ]
 $$
 
 Finally we find that (1) is derivable by applying transitivity to (2) and (3).
 
 
 $$
-F = \left \{ \begin{array}{ccc} 
+F = \left [ \begin{array}{ccc} 
     A & \rightarrow & B & (2) \\
     B & \rightarrow & C & (3) 
     \end{array}
-    \right \}
+    \right ]
 $$
 
 The above is minimal.

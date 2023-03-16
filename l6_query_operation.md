@@ -5,7 +5,7 @@
 By the end of this unit, you should be able to 
 * assess estimated cost of database operation, namely, select, sort and join
 * describe the external sort algorithm
-* describe nested loop join, sort merge join and hash join
+* describe nested loop join, block nested loop join, index nested join, sort merge join and hash join
 
 
 ## Recap Relational Algebra
@@ -24,11 +24,7 @@ There are several ways to implement this operation.
 
 Knowing that the data in $R$ are stored in a Heap file as a set of Heap pages, we could scan $R$ by reading the data from $R$ page by page. For each tuple in the page, we remove it when it does not satisfy $C$ and retain it otherwise. 
 
-The cost (in terms of number of Disk I/Os) of using the sequential scanning approach is
-$$ 
-B(R)
-$$
-
+The cost (in terms of number of Disk I/Os) of using the sequential scanning approach is $B(R)$,
 where $B(R)$ denotes the number of pages storing $R$.
 
 ### Scanning with B+ Tree index
@@ -142,7 +138,7 @@ Firstly we merge the two runs on the left into one.
 
 ![](./images/ext_sort3.png)
 
-When merging two runs into one, we divde the buffer pool's frames into the input frames and output frame. There is only one output frame, the rest are inputs. 
+When merging two runs into one, we divide the buffer pool's frames into the input frames and output frame. There is only one output frame, the rest are inputs. 
 
 In this running example, we have two input frames and one output frame. 
 
@@ -194,7 +190,7 @@ Steps 1.2 to 1.3 define the merging phases (phase 1, phase 2, .., etc). We repea
 
 ###### Helper function divide_n_sort
 
-Next we consider the helper function divde_n_sort(in_pages, bpool), which has the following input and output
+Next we consider the helper function divide_n_sort(in_pages, bpool), which has the following input and output
 - input
     * bpool - the buffer pool (in RAM)
     * in_pages - the pages to be sorted (on disk)
@@ -293,9 +289,9 @@ One obvious issue with the nested loop join is that it only utilizes three frame
 
 We could speed up nested loop join by utilizing all frames of the buffer pool. 
 
-Assuming the buffer pool is of size $m$, we divde the buffer pool into $m-2$ frames for loading $R$ and 1 frame for loading $S$ and 1 frame for output
+Assuming the buffer pool is of size $m$, we divide the buffer pool into $m-2$ frames for loading $R$ and 1 frame for loading $S$ and 1 frame for output
 1. for each $m-2$ pages in $R$, we extract each tuple $t$
-    1. for each tuple $u$ in $S$
+    1. for each page in S$, we extract each tuple $u$.
         1. if $t$ and $u$ satisfy $c$, output $t$ and $u$.
 
 The cost of this approach is $B(R) + \lceil B(R) / (m - 2) \rceil \cdot B(S)$.

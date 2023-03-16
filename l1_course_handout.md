@@ -85,14 +85,14 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 |3 (5/2) | [SQL](./l3_sql.md), [NoSQL](./l3_nosql.md) | SQL | DBM: Chapter 4-5,<br/> DSC: Chapter 2-4 | |
 |4 (12/2) | [Functional Dependency](./l4_fd.md), [Normal Forms](./l4_normal_form.md) | Functional Dependency, Normal Forms | DBM: Chapter 19,<br/> DSC: Chapter 8 | [Assignment 1 Submission (19/2 23:59)](https://edimension.sutd.edu.sg/webapps/blackboard/content/listContentEditable.jsp?content_id=_154919_1&course_id=_4540_1) | 
 |5 (19/2) | [Storage](./l5_storage.md), [Index](./l5_access_method.md) | Strorage, Index | DBM: Chapter 19, <br/> DSC: Chapter 8 |  | 
-|6 (26/2) | [Query Operations](./l6_query_operation.md) | Query Operations | DBM: Chapter 12-14,<br/> DSC: Chapter 12 | Project Lab 1 Submission (5/3 23:59) | 
+|6 (26/2) | [Query Operations](./l6_query_operation.md) | Query Operations | DBM: Chapter 12-14,<br/> DSC: Chapter 12 | [Project Lab 1 Submission (5/3 23:59)](https://edimension.sutd.edu.sg/webapps/blackboard/content/listContentEditable.jsp?content_id=_155774_1&course_id=_4540_1) | 
 |7 (5/3)  | Recess Week | Recess Week | | Self-study flintrock and spark cluster setup (edimension video tutorial) |
-|8 (12/3) | Query Optimization | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission (19/3 23:59) | 
-| 9 (19/3) | Transactions | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
+|8 (12/3) | [Query Optimization](./l8_query_optimization.md) | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission (19/3 23:59) | 
+| 9 (19/3) | Transaction [Recovery](./l9_transaction_crash_recover.md) and [Concurrency](./l9_transaction_concurrency.md)  | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
 | 10 (26/3) | HDFS, MapReduce | HDFS, MapReduce |  |  |
 | 11 (2/4) | Spark | Spark | | Project Lab 3 Submission (9/4 23:59) |
-| 12 (9/4) | Yarn, Revision | Consultation | | Assignment 2 Submission (16/4 23:59) |
-| 13 (16/4)| Guest Lecture | Consultation | | Project Lab 4 Submission (23/4 23:59) |
+| 12 (9/4) | Guest Lecture | Consultation | | Assignment 2 Submission (16/4 23:59) |
+| 13 (16/4)| Yarn, Revision | Consultation | | Project Lab 4 Submission (23/4 23:59) |
 | 14 (23/4)|  |  |  | 
  
 
