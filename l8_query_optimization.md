@@ -181,7 +181,7 @@ Let $R$, $R'$ and $R''$ be relations, the subset of requivalence rules is as fol
 15. $\Pi_{a}(R \cup R') \equiv \Pi_{a}(R) \cup \Pi_{a}(R')$
 16. $\Pi_{a}(\sigma_{c}(R)) \equiv \sigma_{c}(\Pi_{a}(R))$ if $attr(c) \subseteq a$
 17. $\sigma_{c}(R - R') \equiv \sigma_{c}(R) - \sigma_{c}(R') \equiv \sigma_{c}(R) - R'$
-19. $\sigma_{c}(R \cap R') \equiv \sigma_{c}(R) \cap \sigma_{c}(R')$
+18. $\sigma_{c}(R \cap R') \equiv \sigma_{c}(R) \cap \sigma_{c}(R')$
 19. $\sigma_{c}(R \cup R') \equiv \sigma_{c}(R) \cup \sigma_{c}(R')$
 
 With this subset of rules, we can already enumerate a substantially large set of alternative logical query plans from the original plan.
