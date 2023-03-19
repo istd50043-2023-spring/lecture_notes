@@ -4,7 +4,7 @@
 
 By the end of this unit, you should be able to
 
-1. describe the ACID properties of datababase system.
+1. describe the ACID properties of database system.
 1. describe how atomicity is guaranteed by using transaction and log.
 1. explain write ahead log with different policies.
 1. explain recovery process with undo, redo, undo/redo logging.
