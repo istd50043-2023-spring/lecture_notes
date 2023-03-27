@@ -5,9 +5,10 @@
 By the end of this unit, you should be able to
 
 1. name the stages in a query life cycle
-2. identify the process invovled in different stages of a query life cycle
+2. identify the process involved in different stages of a query life cycle
 3. identify the different execution model
 4. explain the process of query optimization
+5. estimate the cost of complex query operations
 
 
 ### Query Life Cycle 
@@ -42,7 +43,7 @@ $$
 
 We call them different **logical query plans** of the same query. We might argue that (E3) might perform better as we push down the selection operator and reduce the size of the joined relation. 
 
-Sometimes for ease of reasoning we might consider representing the relational algbra expression in a tree structue, for instance, (E3) can be represented as
+Sometimes for ease of reasoning we might consider representing the relational algbra expression in a tree structure, for instance, (E3) can be represented as
 
 ```mermaid
 graph
@@ -163,7 +164,7 @@ Two relaional algebra expressions are consider equivalent if they produce the sa
 
 Let $R$, $R'$ and $R''$ be relations, the subset of requivalence rules is as follows,
 
-1. $\sigma_{c_1}(\sigma_{c_2})(R) \equiv \sigma_{c_1 \wedge c_2}(R)$ 
+1. $\sigma_{c_1}(\sigma_{c_2}(R)) \equiv \sigma_{c_1 \wedge c_2}(R)$ 
 2. $\sigma_{c_1}(\sigma_{c_2}(R)) \equiv \sigma_{c_2}(\sigma_{c_1}(R))$
 3. $\Pi_{a_1}(\Pi_{a_2} ... (\Pi_{a_n}(R))) = \Pi_{a_1}(R)$ if $a_1 \subseteq a_2 \subseteq ... \subseteq a_n$
 4. $\sigma_{c}(R \times R') \equiv R \bowtie_{c} R'$.
@@ -178,9 +179,10 @@ Let $R$, $R'$ and $R''$ be relations, the subset of requivalence rules is as fol
 13. $\Pi_{a_1 \cup a_2} (R \bowtie_{c} R') \equiv \Pi_{a_1}(R) \bowtie_{c} \Pi_{a_2}(R')$  if $attr(c) \equiv a_1 \cup a_2$.
 14. $\Pi_{a_1 \cup a_2} (R \bowtie_{c} R') \equiv \Pi_{a_1 \cup a_2}(\Pi_{a_1\cup a_3}(R) \bowtie_{c} \Pi_{a_2\cup a_4}(R') )$ if $a_3 \cup a_4 \equiv attr(c)$
 15. $\Pi_{a}(R \cup R') \equiv \Pi_{a}(R) \cup \Pi_{a}(R')$
-16. $\sigma_{c}(R - R') \equiv \sigma_{c}(R) - \sigma_{c}(R') \equiv \sigma_{c}(R) - R'$
-17. $\sigma_{c}(R \cap R') \equiv \sigma_{c}(R) \cap \sigma_{c}(R')$
-18. $\sigma_{c}(R \cup R') \equiv \sigma_{c}(R) \cup \sigma_{c}(R')$
+16. $\Pi_{a}(\sigma_{c}(R)) \equiv \sigma_{c}(\Pi_{a}(R))$ if $attr(c) \subseteq a$
+17. $\sigma_{c}(R - R') \equiv \sigma_{c}(R) - \sigma_{c}(R') \equiv \sigma_{c}(R) - R'$
+18. $\sigma_{c}(R \cap R') \equiv \sigma_{c}(R) \cap \sigma_{c}(R')$
+19. $\sigma_{c}(R \cup R') \equiv \sigma_{c}(R) \cup \sigma_{c}(R')$
 
 With this subset of rules, we can already enumerate a substantially large set of alternative logical query plans from the original plan.
 
