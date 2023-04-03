@@ -16,7 +16,7 @@ header-includes: |
 By the end of this lesson, you are able to
 
 * Articulate the purpose of Hadoop YARN
-* Identify the shortcoming of JobTracker and TaskTracker in Hadoop V1
+* Identify the shortcomings of JobTracker and TaskTracker in Hadoop V1
 * Describe how YARN addresses the above issues
 * List and differentiate the different YARN schedulers
 
@@ -71,7 +71,7 @@ We are looking at Hadoop Resource Management
 	* Fault-tolerance
 
 * It becomes the bottle neck
-   * Only scale to < 4K nodes, 40K tasks
+   * Only scales to < 4K nodes, 40K tasks
 
 
 # What was wrong with Hadoop v1 Resource Management
@@ -146,7 +146,7 @@ We are looking at Hadoop Resource Management
 
 ![](./images/scheduler.png)
 
-* Application Master ask for resources
+* Application Master asks for resources
     * It could be upfront
     * or during the execution.
 
@@ -157,7 +157,7 @@ We are looking at Hadoop Resource Management
    * Cluster Utilization
    * ... 
 
-# YARN shipped with a few scheduler (template)
+# YARN shipped with a few schedulers (template)
 
 * FIFOScheduler
 * CapacityScheduler
@@ -178,10 +178,10 @@ We are looking at Hadoop Resource Management
 
 ![](http://www.cobub.com/wp-content/uploads/2017/07/3.png){width=60%}
 
-* Statically divided into multiple queue, e.g.
+* Statically divided into multiple queues, e.g.
     * one for short jobs
     * one for long jobs
-* A request is submitted to  one queue
+* A request is submitted to one queue
 * Within the queue, FIFO
 
 
@@ -219,8 +219,8 @@ https://cs.stanford.edu/~matei/papers/2011/nsdi_drf.pdf
 * Mesos
     * Static partitioning of resources
     * Mesos master and Mesos Agent
-    * Multi-framework supports through Mesos Agents
-	* Framework agent ask for resource from mesos master and schedule
+    * Multi-framework support through Mesos Agents
+	* Framework agent ask for resource from mesos master and schedules
       its own jobs
 * Google's Borg
     * Large-scale cluster management at Google with Borg, Abhishek

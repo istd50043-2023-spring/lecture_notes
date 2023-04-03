@@ -344,14 +344,14 @@ Machine learning!
 
 Spark MLLib is the original Machine Learning library that shipped with Spark
 
-* support RDD
+* supports RDD
 * a simple set of data type and APIs
 
 
 # Spark MLLib data types - Vector 
 
-* Vector is one of the essential data structure for machine learning, 
-* In Spark, vectors are local data collection
+* Vector is one of the essential data structures for machine learning, 
+* In Spark, vectors are local data collections
     * Dense vector - all values need to be
 specified.
 ```python
@@ -418,7 +418,7 @@ Spark ML is more recent development Machine Learning library that shipped with S
 # Spark ML Pipeline
 
 
-A Pipeline is a common name in machine learning frameworks. In Spark it represent a sequence of algo to process and/or learn
+A Pipeline is a common name in machine learning frameworks. In Spark it represent a sequence of algos to process and/or learn
 data. 
 
 * Transformer - for data transformation, e.g. tokenization, TF-IDF

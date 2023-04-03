@@ -25,7 +25,7 @@ By the end of this lesson, you are able to
 
 # What problems Hadoop MapReduce had solved?
 
-Back in the late 1990s and early 2000s, some killer apps appear
+Back in the late 1990s and early 2000s, some killer apps appeared
 
 * Web search index
 * Sentiment analysis, analyzing what people said on forums, social
@@ -104,6 +104,7 @@ Justin  Ma, Murphy  McCauley, Michael Jay Franklin, Scott J. Shenker,
 I. Stoica*, NSDI '12
 
 * Now a multi-billions company, you can google who are the founders.
+
 ![](https://venturebeat.com/wp-content/uploads/2019/02/databricks.png){width=30%}
 
 # Spark core features
@@ -205,15 +206,15 @@ What do you mean by lazy and strict?
 # Lazy Evaluation
 
 
-Lazy evaluation is one of the evaluation strategies, besides
-call-by-value, call-by-reference. 
+Lazy evaluation is one of the evaluation strategies (also called call-by-need), besides
+call-by-value and call-by-reference. 
 Let's pretend Python 3.10 supports lazy evaluation.
 
 ```python
 def filter(p, l):
     match l:
         case []: return []
-        case [hd, *tl] if (p(hd)): return [hd] + filter(p,tl)
+        case [hd, *tl] if (p(hd)): return [hd]+filter(p,tl)
         case [hd, *tl]: return filter(p,tl) 
 
 def takeOne(l):
@@ -267,8 +268,7 @@ will not be computed.
 
 # RDD Transformations
 
-All Transformations take the current RDD as (part of) the input and
-return some a new RDD as output.
+All Transformations take the current RDD as (part of) the input and return a new RDD as output.
 
 Let `l` be a RDD / a distributed list, `f` be a function
 
@@ -283,13 +283,12 @@ Let `l` be a RDD / a distributed list, `f` be a function
 
 
 Note it follows the builtin Scala library's convention, `map`,
-`filter` and etc are methods of the List class
+`filter` etc. are methods of the List class
 
 
 # RDD Transformations
 
-All Transformations take the current RDD as (part of) the input and
-return some a new RDD as output.
+All Transformations take the current RDD as (part of) the input and return a new RDD as output.
 
 Let `l` be a RDD / a distributed list, 
 
@@ -305,8 +304,7 @@ Let `l` be a RDD / a distributed list,
 
 # RDD Transformations
 
-All Transformations take the current RDD as (part of) the input and
-return some a new RDD as output.
+All Transformations take the current RDD as (part of) the input and return a new RDD as output.
 
 Let `l1` and `l2` be RDDs,
 
@@ -319,8 +317,7 @@ Let `l1` and `l2` be RDDs,
 
 # RDD Transformations
 
-All Transformations takes the current RDD as (part of) the input and
-return some a new RDD as output.
+All Transformations take the current RDD as (part of) the input and return a new RDD as output.
 
 Let `l1` and `l2` be RDDs / distributed lists of key-value pairs,
 
@@ -340,7 +337,7 @@ Let `l1` and `l2` be RDDs / distributed lists of key-value pairs,
 # RDD Actions
 
 All Actions take the current RDD as (part of) the input and
-return some value that is not an RDD. It forces computation to happen.
+return a value that is not an RDD. It forces computation to happen.
 
 
 |  RDDs  | Desc | Toy MR |
@@ -352,7 +349,7 @@ return some value that is not an RDD. It forces computation to happen.
 | l.first()  |  |  l[0] |
 | l.take(n) | returns an array | l[:n] |
 
-* Common mistakes, don't do this
+* Common mistakes, don't do this:
 
 ```python
 def foo(rdd):
@@ -379,15 +376,14 @@ return some value that is not an RDD. It forces computation to happen.
 # RDD shuffle operations
 
 Some transformation/operations will trigger a shuffle event, in which
-Spark redistributes the data across partition.
+Spark redistributes the data across partitions.
 
 * reduceByKey
 * join
 * groupByKey
 * sortByKey
 
-It is potentially expensive as it incurs extra I/Os, and extra heap
-consumption and temp files.
+It is potentially expensive as it incurs extra I/Os, and extra heap consumption and temp files.
 
 We will discuss this shortly!
 
