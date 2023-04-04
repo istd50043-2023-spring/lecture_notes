@@ -20,7 +20,7 @@ The main resources are lecture slides, tutorial sessions, and online documentati
 ## Instructors
 
 * Dorien Herremans (dorien_herremans@sutd.edu.sg)
-Office Hour:
+Office Hour: Please email to arrange
 
 * Kenny Lu (kenny_lu@sutd.edu.sg) 
 Office Hour: Monday 3:00-4:30pm (please send email to arrange)
@@ -89,10 +89,10 @@ Please refer to the project [page](https://github.com/istd50043-2023-spring/proj
 |7 (5/3)  | Recess Week | Recess Week | | Self-study flintrock and spark cluster setup (edimension video tutorial) |
 |8 (12/3) | [Query Optimization](./l8_query_optimization.md) | Query Optimization | DBM: Chapter 15 , <br/> DSC: Chapter 13 | Project Lab 2 Submission (19/3 23:59) | 
 | 9 (19/3) | Transaction [Recovery](./l9_transaction_crash_recover.md) and [Concurrency](./l9_transaction_concurrency.md)  | Transactions | DBM: Chapter 16-18, <br/> DSC: Chapter 14-16 |  | 
-| 10 (26/3) | HDFS, MapReduce | HDFS, MapReduce |  |  |
-| 11 (2/4) | Spark | Spark | | Project Lab 3 Submission (9/4 23:59) |
-| 12 (9/4) | Guest Lecture | Consultation | | Assignment 2 Submission (16/4 23:59) |
-| 13 (16/4)| Yarn, Revision | Consultation | | Project Lab 4 Submission (23/4 23:59) |
+| 10 (26/3) | [HDFS](./l10_hdfs.md), [MapReduce](./l10_mapreduce.md) | HDFS, MapReduce |  |  |
+| 11 (2/4) | Spark part [1](./l11_spark.md) and [2](./l12_spark_p2.md) | Spark | | Project Lab 3 Submission (9/4 23:59) |
+| 12 (9/4) | Guest Lecture | Consultation | | [Assignment 2 Submission](https://edimension.sutd.edu.sg/webapps/assignment/uploadAssignment?content_id=_158556_1&course_id=_4540_1&group_id=&mode=cpview) (16/4 23:59) |
+| 13 (16/4)| [Yarn](./l12_yarn.md), Revision | Consultation | | Project Lab 4 Submission (23/4 23:59) |
 | 14 (23/4)|  |  |  | 
  
 
