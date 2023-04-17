@@ -123,7 +123,7 @@ We are looking at Hadoop Resource Management
 # Hadoop v2 - YARN Resource Management
 
 
-![](https://opensource.com/sites/default/files/resize/images/life-uploads/hadoop-yarn_arch_apche-640x504.png){width=80%}
+![](./images/hadoop-yarn_arch_apche-640x504.png){width=80%}
 
 
 # YARN job submission work flow
@@ -167,7 +167,7 @@ We are looking at Hadoop Resource Management
 # FIFO Scheduler
 
 
-![](http://www.cobub.com/wp-content/uploads/2017/07/2.png){width=60%}
+![](./images/2.png){width=60%}
 
 * Single queue
 * One job takes up the entire cluster
@@ -176,7 +176,7 @@ We are looking at Hadoop Resource Management
 
 # Capacity Scheduler
 
-![](http://www.cobub.com/wp-content/uploads/2017/07/3.png){width=60%}
+![](./images/3.png){width=60%}
 
 * Statically divided into multiple queues, e.g.
     * one for short jobs
@@ -187,7 +187,7 @@ We are looking at Hadoop Resource Management
 
 # Fair Scheduler
 
-![](http://www.cobub.com/wp-content/uploads/2017/07/5.png){width=60%}
+![](./images/fair.png){width=60%}
 
 * Non-static queue
 * Policies
