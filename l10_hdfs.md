@@ -414,7 +414,7 @@ What if we lose more than one input?
 
 * Reed-Solomon EC
 
-![Erasure Coding](https://ndu0e1pobsf1dobtvj5nls3q-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/hdfs-erasure-f1.png){width=100%}
+![Erasure Coding](./images/hdfs-erasure-f1.png){width=100%}
 
 $G^T$ is called a *Generator Matrix*.
 
