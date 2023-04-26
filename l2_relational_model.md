@@ -57,7 +57,7 @@ $$
 
 #### Definition (Tuple)
 Let $R$ be a relation $R \subseteq D_1 \times D_2 \times ... \times D_n$. Then a tuple $t$ is an element of $R$
-$t = (d_1,...,d_2) \in R$ where for all $i\in [1,n]$ we have $d_i \in D_i$.
+$t = (d_1,...,d_n) \in R$ where for all $i\in [1,n]$ we have $d_i \in D_i$.
 
 #### Definition (Schema)
 Let $R$ be a relation $R \subseteq D_1 \times D_2 \times ... \times D_n$. Then the schema of $R$, denoted as $S_R$ is a mapping of attribute names to domains (i.e. $D_1, ..., D_n$)
