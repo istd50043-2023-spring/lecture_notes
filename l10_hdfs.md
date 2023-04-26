@@ -436,7 +436,7 @@ $$
 \end{bmatrix} 
 = 
 \begin{bmatrix}
-1 \\ 0 \\ 1 \\ 0 \\ 1 \\ 0
+1 \\ 0 \\ 1 \\ 0 \\ 1 \\ 2
 \end{bmatrix} 
 $$
 
@@ -466,7 +466,7 @@ $$
 \end{bmatrix} 
 = 
 \begin{bmatrix}
-1 \\ 1 \\ 1 \\ 0
+1 \\ 1 \\ 1 \\ 2
 \end{bmatrix} 
 $$
 
@@ -480,9 +480,9 @@ We find the inverse of $G^T_{\neg{(1,3)}}$ and multiply it to both sides
 $$
 \begin{bmatrix}
 1 & 0 & 0 & 0 \\
-0 & 1 & 1 & 0 \\
+0 & -1 & 1 & 0 \\
 0 & 1 & 0 & 0 \\
-1 & 1 & 0 & 1 
+-1 & -1 & 0 & 1 
 \end{bmatrix}
 \times
 \begin{bmatrix}
@@ -498,13 +498,13 @@ $$
 = 
 \begin{bmatrix}
 1 & 0 & 0 & 0 \\
-0 & 1 & 1 & 0 \\
+0 & -1 & 1 & 0 \\
 0 & 1 & 0 & 0 \\
-1 & 1 & 0 & 1 
+-1 & -1 & 0 & 1 
 \end{bmatrix}
 \times
 \begin{bmatrix}
-1 \\ 1 \\ 1 \\ 0
+1 \\ 1 \\ 1 \\ 2
 \end{bmatrix} 
 $$
 
@@ -522,13 +522,13 @@ $$
 = 
 \begin{bmatrix}
 1 & 0 & 0 & 0 \\
-0 & 1 & 1 & 0 \\
+0 & -1 & 1 & 0 \\
 0 & 1 & 0 & 0 \\
-1 & 1 & 0 & 1 
+-1 & -1 & 0 & 1 
 \end{bmatrix}
 \times
 \begin{bmatrix}
-1 \\ 1 \\ 1 \\ 0
+1 \\ 1 \\ 1 \\ 2
 \end{bmatrix} 
 $$
 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  Data \ \ \ \ \  $G^{T^{-1}}_{\neg{(1,3)}}$ \ \ Codeword
